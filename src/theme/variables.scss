@@ -1,0 +1,51 @@
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+// 共享变量
+// --------------------------------------------------
+// 为了定制这个应用程序的外观和感觉，可以重写
+// 在离子源SCSS文件中发现的SASS变量。
+$text-color:        #000;
+$background-color:  #fff;
+//设置tabs点击后的颜色
+$tabs-ios-tab-text-color-active: rgb(78, 195, 187);
+$tabs-ios-tab-icon-color-active: rgb(78, 195, 187);
+$tabs-md-tab-text-color-active: rgb(78, 195, 187);
+$tabs-md-tab-icon-color-active: rgb(78, 195, 187);
+
+// 命名颜色变量
+// --------------------------------------------------
+$colors: (
+  primary:    #488aff,
+  secondary:  #32db64,
+  danger:     #f53d3d,
+  light:      #f4f4f4,
+  dark:       #222,
+  zhuse:      rgb(78, 195, 187)
+);
+
+// 应用主题
+// --------------------------------------------------
+// Ionic程序可以应用不同的主题
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+@import "roboto";
+@import "noto-sans";
+
+//设置全局样式
+.header_avatar img{
+    border-radius: 50%;
+}
